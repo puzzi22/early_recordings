@@ -1,0 +1,30 @@
+{
+  "name": "early_recordings",
+  "version": "1.0.0",
+  "description": "A webpage about the first recordings of horn players in the early 20th century",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "npm-run-all clean parcel:dev",
+    "build": "npm-run-all clean parcel:build",
+    "parcel:dev": "parcel",
+    "parcel:build": "parcel build",
+    "clean": "rimraf dist .parcel-cache"
+  },
+  "keywords": [
+    "horn",
+    "natural horn",
+    "valve horn",
+    "early recordings",
+    "HIP",
+    "Historical Performance Practice"
+  ],
+  "author": "Pierre-Antoine Tremblay <patremblay22@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "parcel": "^2.8.0"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^3.0.2"
+  }
+}

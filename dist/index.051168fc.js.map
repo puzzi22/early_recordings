@@ -1,0 +1,1 @@
+{"mappings":"AACAA,QAAQC,IAAI","sources":["src/app.js"],"sourcesContent":["const greeting = 'horn players from around the world!';\nconsole.log(`Hello ${greeting}`);"],"names":["console","log"],"version":3,"file":"index.051168fc.js.map"}
