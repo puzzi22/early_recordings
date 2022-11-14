@@ -1,16 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap');
+
+/* General Rules */
+
+/* Color Variables */
+:root {
+    --text-color: rgb(23, 23, 23);
+    --primary-color: rgb(229, 136, 29);
+    --secondary-color: rgb(62, 62, 62);
+    --secondary-light-color: rgb(224, 224, 224);
+}
+
+/* Margins & Paddings Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+
 body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
     height: 100vh;
-    color: #1f1f1f;
-    background: linear-gradient(to bottom, #bada55, #c0ffee);
+    color: var(--secondary-color);
+    background-color: #f9f9f9
+  }
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    background-color: transparent;
+    font-size: 1.2rem; 
+  }
+  
+a:hover {
+      color: var(--secondary-light-color);
+  }
+  
+p {
+    margin-bottom: 10px;
+  }
+  
+ul, li {
+    list-style: none;
+    padding: 0;
+    margin: 0; 
+  }
+  
+.title {
+    font-weight: 800;
+    font-size: 1.9rem;
+    margin: 1rem 0; 
   }
 
 h1 {
     font-size: 50px;
     text-transform: uppercase;
-    color: purple;
+    color: var(--primary-color);
 }
 
 h2 {
-    color: rgb(84, 83, 83);
+    color: var(--secondary-color);
     font-style: italic;
+}
+
+/* Container */
+/* The following rules adapt to the different screens. The container occupy 100% of the screen, with a left and right padding, and automatic left and right margins, so the design is centered.
+The media queries allow a maximum width for the container in relation with devices with a minimum width indicated with the breakpoint.
+*/
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  
+  @media (min-width: 992px) {
+    .container {
+      max-width: 960px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1140px;
+    }
+  }
+  
+  @media (min-width: 1400px) {
+    .container {
+      max-width: 1300px;
+    }
+  }
+
+/* Header */
+header {
+    background-image: -webkit-gradient(
+          linear,
+          left top,
+          left bottom,
+          from(rgba(0, 0, 0, 0.4)),
+          to(rgba(0, 0, 0, 0.9))
+       ),
+       url(./img/1895Conservatoire.jpg);
+    background-image: -webkit-linear-gradient(
+          rgba(0, 0, 0, 0.4),
+          rgba(0, 0, 0, 1)
+       ),
+       url(./img/1895Conservatoire.jpg);
+    background-image: -o-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1)),
+       url(./img/1895Conservatoire.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1)),
+       url(./img/1895Conservatoire.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+ }
+
+ .featured {
+    position: absolute;
+    width: 1140px;
+    bottom: 5%;
+    left: 5%;
+ }
+
+/* Main Navigation */
+.menu-links {
+    max-width: 1200px;
+    float: right;
+    list-style:none;
+    margin-top: 20px;
+    margin-bottom: 20 px;
+    margin-right: 50px;
+}
+
+.menu-links li {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.dark-background {
+    background-color: black;
+    border-radius: 10;
+    padding: 3px 30px 3px 0;
+}
+
+/* Homepage */
+.featured :not(h1) {
+    color: var(--secondary-light-color);
 }
