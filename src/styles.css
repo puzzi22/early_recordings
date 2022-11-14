@@ -39,7 +39,7 @@ a {
   }
   
 a:hover {
-      color: var(--secondary-light-color);
+    color: var(--secondary-light-color);
   }
   
 p {
@@ -131,14 +131,25 @@ header {
     left: 5%;
  }
 
+#featured-span {
+    display: block;
+    color: var(--secondary-light-color);
+    font-style: italic;
+    font-size: 4rem;
+    font-weight: 300;
+ }
+
 /* Main Navigation */
 .menu-links {
     max-width: 1200px;
     float: right;
-    list-style:none;
+    list-style: none;
     margin-top: 20px;
-    margin-bottom: 20 px;
+    margin-bottom: 20px;
     margin-right: 50px;
+    position: fixed;
+    top: 0;
+    right: 0;
 }
 
 .menu-links li {
@@ -150,6 +161,28 @@ header {
     background-color: black;
     border-radius: 10;
     padding: 3px 30px 3px 0;
+}
+
+/* Footer */
+footer {
+    padding: 20px 0;
+    background-color: black;
+    color: var(--secondary-light-color);
+    font-size: 0.8rem;
+}
+
+.legal-links {
+    float: right;
+    list-style: none;
+}
+
+.legal-links li {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.legal-links li a {
+    font-size: 0.8rem;
 }
 
 /* Homepage */
