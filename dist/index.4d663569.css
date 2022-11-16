@@ -86,7 +86,21 @@ h1 {
 
 h2 {
   color: var(--secondary-color);
+  margin-bottom: 2rem;
   font-style: italic;
+}
+
+section {
+  margin-bottom: 10rem;
+}
+
+hr {
+  margin: 3rem 0 4rem;
+}
+
+iframe {
+  margin-bottom: 3rem;
+  display: block;
 }
 
 @media (min-width: 992px) {
@@ -201,6 +215,21 @@ footer {
 
 .featured :not(h1) {
   color: var(--secondary-light-color);
+}
+
+.horn-list a {
+  font-size: 1.8rem;
+}
+
+.horn-list a:hover {
+  color: var(--secondary-color);
+}
+
+.portrait {
+  height: 50vh;
+  min-height: 20rem;
+  float: right;
+  margin: 0 0 3rem 3rem;
 }
 
 .items {
