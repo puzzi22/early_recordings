@@ -119,6 +119,25 @@ iframe {
     margin-bottom: 3rem;
 }
 
+figure {
+    border: 1px #cccccc solid;
+    padding: 4px;
+    margin: auto;
+    float: right;
+    margin: 0 0 3rem 3rem;
+  }
+
+figure img {
+    vertical-align: top;
+}
+  
+figcaption {
+    font-size: 1.3rem;
+    font-style: italic;
+    padding: 2px;
+    text-align: center;
+  }
+
 /* Container */
 /* The following rules adapt to the different screens. The container occupy 100% of the screen, with a left and right padding, and automatic left and right margins, so the design is centered.
 The media queries allow a maximum width for the container in relation with devices with a minimum width indicated with the breakpoint.
@@ -275,9 +294,7 @@ footer {
 
 .portrait {
     height: 50vh;
-    min-height: 20rem;
-    float: right;
-    margin: 0 0 3rem 3rem;
+    min-height: 30rem;
 }
 
 /* Countries */

@@ -103,6 +103,24 @@ iframe {
   display: block;
 }
 
+figure {
+  float: right;
+  border: 1px solid #ccc;
+  margin: 0 0 3rem 3rem;
+  padding: 4px;
+}
+
+figure img {
+  vertical-align: top;
+}
+
+figcaption {
+  text-align: center;
+  padding: 2px;
+  font-size: 1.3rem;
+  font-style: italic;
+}
+
 @media (min-width: 992px) {
   .container {
     max-width: 960px;
@@ -227,9 +245,7 @@ footer {
 
 .portrait {
   height: 50vh;
-  min-height: 20rem;
-  float: right;
-  margin: 0 0 3rem 3rem;
+  min-height: 30rem;
 }
 
 .items {
