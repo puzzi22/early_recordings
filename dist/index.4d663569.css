@@ -2,6 +2,7 @@
 :root {
   --text-color: #171717;
   --primary-color: #e5881d;
+  --primary-color2: #b66100;
   --secondary-color: #3e3e3e;
   --secondary-light-color: #e0e0e0;
 }
@@ -13,9 +14,9 @@
 }
 
 html {
+  overflow-x: none;
   scroll-behavior: smooth;
   font-size: 62.5%;
-  overflow-x: hidden;
 }
 
 body {
@@ -41,7 +42,7 @@ a:hover {
 }
 
 p {
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
 }
 
 ul, li {
@@ -54,10 +55,16 @@ ul, li {
   text-transform: uppercase;
   color: var(--secondary-light-color);
   float: left;
-  margin: 1rem 0 1rem 30px;
+  margin: 1rem 0 1rem 3rem;
   font-size: 2rem;
   font-weight: 800;
   display: inline;
+}
+
+@media only screen and (max-width: 768px) {
+  .logo {
+    margin-left: 1.5rem;
+  }
 }
 
 .logo a {
@@ -70,8 +77,15 @@ ul, li {
 }
 
 .logo.dark-background {
-  margin-top: 20px;
-  padding-left: 30px;
+  padding-left: 2rems;
+  margin-top: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .logo.dark-background {
+    float: left;
+    padding: 0 1.5rem;
+  }
 }
 
 h1 {
@@ -80,8 +94,19 @@ h1 {
   font-size: 5rem;
 }
 
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  body {
+    font-size: 2rem;
+    line-height: 1.7;
+  }
+}
+
 .section-title {
-  margin: 30px 0;
+  margin: 3rem 0;
 }
 
 h2 {
@@ -90,12 +115,40 @@ h2 {
   font-style: italic;
 }
 
+@media only screen and (max-width: 768px) {
+  h2 {
+    font-size: 2.5rem;
+  }
+}
+
+h3 {
+  text-transform: uppercase;
+  margin-top: 6rem;
+  font-size: 2rem;
+}
+
+.more li {
+  margin-left: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .more li a {
+    font-size: 2rem;
+  }
+}
+
 section {
   margin-bottom: 10rem;
 }
 
+@media only screen and (max-width: 768px) {
+  section {
+    margin-bottom: 5rem;
+  }
+}
+
 hr {
-  margin: 3rem 0 4rem;
+  margin: 5rem 0 1rem;
 }
 
 iframe {
@@ -105,9 +158,9 @@ iframe {
 
 figure {
   float: right;
-  border: 1px solid #ccc;
+  border: .1rem solid #ccc;
   margin: 0 0 3rem 3rem;
-  padding: 4px;
+  padding: .4rem;
 }
 
 figure img {
@@ -116,50 +169,38 @@ figure img {
 
 figcaption {
   text-align: center;
-  padding: 2px;
+  padding: .2rem;
   font-size: 1.3rem;
   font-style: italic;
 }
 
 @media (min-width: 992px) {
   .container {
-    max-width: 960px;
+    width: 90%;
+    margin: 0 auto;
   }
 }
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 1140px;
+    max-width: 114rem;
   }
 }
 
 @media (min-width: 1400px) {
   .container {
-    max-width: 1300px;
+    max-width: 130rem;
   }
 }
 
 .container-mobile {
-  width: 94%;
+  width: 90%;
   margin: 0 auto;
-}
-
-@media only screen and (min-width: 992px) {
-  .container {
-    width: 90%;
-    margin: 0 auto;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .container {
-    width: 90%;
-    margin: 0 auto;
-  }
 }
 
 header {
   height: 100vh;
+  width: auto;
   background-image: linear-gradient(#0006, #000), url("1895Conservatoire.8819ce92.jpg");
   background-position: top;
   background-size: cover;
@@ -171,10 +212,21 @@ header {
 }
 
 .featured {
-  width: 1140px;
+  width: 114rem;
   position: absolute;
   bottom: 5%;
   left: 5%;
+}
+
+@media only screen and (max-width: 768px) {
+  .featured {
+    width: 100%;
+    margin: 0;
+    padding: 0 2rem;
+    bottom: 0;
+    left: 0;
+    overflow-x: hidden;
+  }
 }
 
 #featured-span {
@@ -185,12 +237,16 @@ header {
   display: block;
 }
 
+@media only screen and (max-width: 768px) {
+  #featured-span {
+    font-size: 3.5rem;
+  }
+}
+
 .menu-links {
-  max-width: 1200px;
+  max-width: 120rem;
   float: right;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-right: 0;
+  margin: 2rem 0;
   list-style: none;
   position: sticky;
   top: 0;
@@ -199,22 +255,57 @@ header {
 
 .menu-links li {
   color: var(--secondary-light-color);
-  margin-left: 30px;
+  margin-left: 3rem;
   font-size: 2rem;
   display: inline-block;
+}
+
+@media only screen and (max-width: 768px) {
+  .menu-links {
+    float: left;
+    margin: 1rem 0;
+    padding: 0;
+  }
+
+  .menu-links li {
+    margin: 0 1.5rem;
+    font-size: 2rem;
+    display: block;
+  }
+
+  .menu-links li a {
+    float: left;
+    font-size: 2rem;
+    line-height: 2;
+  }
 }
 
 .dark-background {
   background-color: #00000080;
   border-radius: 10px;
-  padding: 3px 30px 3px 0;
+  padding: .3rem 3rem .3rem 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .dark-background {
+    margin-top: 2rem;
+    padding: 0;
+  }
 }
 
 footer {
   color: var(--secondary-light-color);
   background-color: #000;
-  padding: 20px 0;
+  padding: 2rem 0;
   font-size: 1.4rem;
+}
+
+@media only screen and (max-width: 768px) {
+  footer {
+    text-align: center;
+    padding: 2rem auto;
+    font-size: 1.3rem;
+  }
 }
 
 .legal-links {
@@ -223,8 +314,20 @@ footer {
 }
 
 .legal-links li {
-  margin-left: 30px;
+  margin-left: 3rem;
   display: inline-block;
+}
+
+@media only screen and (max-width: 768px) {
+  .legal-links {
+    float: none;
+    text-align: center;
+  }
+
+  .legal-links li {
+    margin-left: 0;
+    margin-right: 1.5rem;
+  }
 }
 
 .legal-links li a {
@@ -235,8 +338,23 @@ footer {
   color: var(--secondary-light-color);
 }
 
+.benefits li {
+  margin-left: 3rem;
+  list-style: disc;
+}
+
 .horn-list a {
   font-size: 1.8rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .horn-list a {
+    font-size: 2rem;
+  }
+
+  .horn-list li {
+    margin-left: 2rem;
+  }
 }
 
 .horn-list a:hover {
@@ -245,14 +363,42 @@ footer {
 
 .portrait {
   height: 50vh;
-  min-height: 30rem;
+  min-height: 20rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .portrait {
+    width: 40vw;
+    height: auto;
+  }
+}
+
+.dedicatee li {
+  margin-left: 2rem;
+  list-style: inside;
+}
+
+@media only screen and (max-width: 768px) {
+  .dedicatee li {
+    font-size: 2rem;
+  }
+}
+
+.dedicatee li a {
+  font-size: 1.8rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .dedicatee li a {
+    font-size: 2rem;
+  }
 }
 
 .items {
-  grid-template-columns: repeat(3, 1fr);
-  margin: 50px 0;
+  grid-template-columns: repeat(6, 1fr);
+  margin: 5rem 0;
   display: grid;
-  box-shadow: 0 5px 10px #0000004d;
+  box-shadow: 0 .5rem 1rem #0000004d;
 }
 
 .item {
@@ -330,7 +476,7 @@ footer {
 }
 
 .item-text-title {
-  margin: 5px 0 0;
+  margin: .5rem 0 0;
   padding: 0 1rem;
   font-size: 2rem;
 }
@@ -339,7 +485,31 @@ footer {
   text-transform: uppercase;
   opacity: .7;
   margin: 0;
-  font-size: 4rem;
+  font-size: 2rem;
+}
+
+.instructions {
+  font-style: italic;
+}
+
+.copyrights a {
+  font-size: 1.8rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .copyrights a {
+    font-size: 1.6rem;
+  }
+}
+
+.copyrights .licence a {
+  font-size: 1.5rem;
+}
+
+.licence {
+  margin: 1rem 0 1rem 2rem;
+  font-size: 1.5rem;
+  display: block;
 }
 
 /*# sourceMappingURL=index.4d663569.css.map */
