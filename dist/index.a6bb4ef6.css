@@ -1,0 +1,173 @@
+@media (min-width: 992px) {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 90%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 90%;
+  }
+}
+
+.container-mobile {
+  width: 90%;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .logo {
+    margin-left: 1.5rem;
+  }
+
+  .logo.dark-background {
+    float: left;
+    padding: 0 1.5rem;
+  }
+
+  .more li a {
+    font-size: 2rem;
+  }
+
+  section {
+    margin-bottom: 5rem;
+  }
+
+  iframe {
+    width: 100%;
+  }
+
+  figure {
+    margin-left: 0;
+  }
+
+  .featured {
+    margin: 0;
+    padding: 0 2rem;
+    bottom: 0;
+    left: 0;
+    overflow-x: hidden;
+  }
+
+  #featured-span {
+    font-size: 3.5rem;
+  }
+
+  .dark-background {
+    margin-top: 2rem;
+    padding: 1rem;
+  }
+
+  footer {
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 1.3rem;
+  }
+
+  .legal-links {
+    float: none;
+    text-align: center;
+  }
+
+  .legal-links li {
+    margin-left: 0;
+    margin-right: 1.5rem;
+  }
+
+  .horn-list a {
+    font-size: 1.8rem;
+  }
+
+  .horn-list li {
+    margin-left: 2rem;
+    font-size: 1.8rem;
+    line-height: 2;
+  }
+
+  .portrait {
+    width: 100%;
+    height: auto;
+  }
+
+  .dedicatee li, .dedicatee li a {
+    font-size: 2rem;
+  }
+
+  .items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .instructions {
+    font-size: 1.6rem;
+  }
+
+  .copyrights a {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  body {
+    font-size: 2rem;
+    line-height: 1.7;
+  }
+
+  .featured-text {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  .featured h2 {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .featured {
+    padding: 0 2rem;
+    bottom: 5%;
+    left: 5%;
+  }
+
+  .featured-text {
+    font-size: 2rem;
+  }
+
+  .menu-links {
+    float: left;
+    margin: 1rem 0;
+    padding: 0;
+  }
+
+  .menu-links li {
+    margin: 0 1.5rem;
+    font-size: 2rem;
+    display: block;
+  }
+
+  .menu-links li a {
+    float: left;
+    font-size: 2rem;
+    line-height: 1.8;
+  }
+}
+
+/*# sourceMappingURL=index.a6bb4ef6.css.map */
