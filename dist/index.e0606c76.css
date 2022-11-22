@@ -58,8 +58,7 @@ ul {
 .logo {
   text-transform: uppercase;
   color: var(--secondary-light-color);
-  float: left;
-  margin: 1rem 0 1rem 3rem;
+  margin: 1rem 0 2rem 3rem;
   font-size: 2rem;
   font-weight: 800;
   display: inline;
@@ -135,7 +134,7 @@ figcaption {
 .menu-links {
   max-width: 100%;
   float: right;
-  margin: 2rem 0;
+  margin: 2rem 3rem 2rem 0;
   list-style: none;
   position: sticky;
   top: 0;
@@ -162,6 +161,10 @@ footer {
   font-size: 1.4rem;
 }
 
+.content {
+  min-height: calc(100vh - 16rem);
+}
+
 .legal-links {
   float: right;
   list-style: none;
@@ -176,4 +179,4 @@ footer {
   font-size: 1.4rem;
 }
 
-/*# sourceMappingURL=description.e0606c76.css.map */
+/*# sourceMappingURL=index.e0606c76.css.map */

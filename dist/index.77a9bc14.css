@@ -8,7 +8,7 @@ header {
 }
 
 .one-third {
-  height: 50vh;
+  height: 40vh;
 }
 
 .featured {
@@ -28,6 +28,19 @@ header {
 
 .featured :not(h1) {
   color: var(--secondary-light-color);
+}
+
+.flex-container {
+  justify-content: space-between;
+  display: flex;
+}
+
+.logo {
+  flex-grow: 1;
+}
+
+.menu-links {
+  flex-grow: 4;
 }
 
 .benefits li {
