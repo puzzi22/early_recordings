@@ -15,10 +15,17 @@
     <link rel="stylesheet" href="../css/general.css" />
     <link rel="stylesheet" href="../css/queries.css" />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-  />
-  <script type="text/javascript" src="../mobilenav.js"></script>
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script type="text/javascript" src="../mobilenav.js"></script>
+    <script src="../../node_modules/blazy/blazy.js"></script>
+    <script>
+      ;(function() {
+          // Initialize
+          var bLazy = new Blazy();
+      })();
+  </script>
   </head>
 
   <body class="page-home">
@@ -43,7 +50,7 @@
             <h2>Biography</h2>
             <figure>
               <img
-                class="portrait"
+                class="portrait b-lazy"
                 src="../img/vuillermoz.jpg"
                 alt="Horn player Édouard Vuillermoz"
               />
@@ -147,6 +154,7 @@
                 <cite
                   ><span lang="fr"
                     ><a
+                      class="b-lazy"
                       href="https://imslp.org/wiki/Intermezzo_(Jehin%2C_Fernand)"
                       target="_blank"
                       >Intermezzo</a
@@ -159,6 +167,7 @@
                 <cite
                   ><span lang="fr"
                     ><a
+                      class="b-lazy"
                       href="https://imslp.org/wiki/Nocturne_(Jeanjean%2C_Paul)"
                       target="_blank"
                       >Nocturne</a
@@ -171,6 +180,7 @@
                 <cite
                   ><span lang="fr"
                     ><a
+                      class="b-lazy"
                       href="https://imslp.org/wiki/Polonaise_(Rousselot%2C_Joseph-François)"
                       target="_blank"
                       >Polonaise</a
@@ -208,7 +218,8 @@
             <iframe
               width="560"
               height="315"
-              src="https://www.youtube.com/embed/yhdYf6TO7pk?start=56"
+              class="b-lazy"
+              data-src="https://www.youtube.com/embed/yhdYf6TO7pk?start=56"
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
@@ -216,7 +227,8 @@
             <iframe
               width="560"
               height="315"
-              src="https://www.youtube.com/embed/UW8AvDoCn3U?start=196"
+              class="b-lazy"
+              data-src="https://www.youtube.com/embed/UW8AvDoCn3U?start=196"
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
@@ -224,7 +236,8 @@
             <iframe
               width="560"
               height="315"
-              src="https://www.youtube.com/embed/obl1MQSoR5w?start=1222"
+              class="b-lazy"
+              data-src="https://www.youtube.com/embed/obl1MQSoR5w?start=1222"
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
@@ -251,17 +264,5 @@
         </ul>
       </div>
     </footer>
-
-    <script>
-      function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-          x.className += " responsive";
-        } else {
-          x.className = "topnav";
-        }
-      }
-    </script>
-
   </body>
 </html>

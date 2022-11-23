@@ -21,6 +21,7 @@
   "author": "Pierre-Antoine Tremblay <patremblay22@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "blazy": "^1.8.2",
     "parcel": "^2.8.0"
   },
   "devDependencies": {
