@@ -13,30 +13,16 @@
 
   <body class="page-home">
     <header class="one-third">
-      <div class="flex-container">
-        <div class="logo dark-background">
-          <a href="/index.html">Early_Horn_Recordings_</a>
-        </div>
-        <nav class="container container-mobile">
-          <ul class="menu-links dark-background">
-            <li>
-              <a href="/description.html">Project Description</a>
-            </li>
-            <li>
-              <a href="/hornplayers.html">Horn Players</a>
-            </li>
-            <li>
-              <a href="/countries.html">Countries</a>
-            </li>
-            <li>
-              <a href="#">Chronology</a>
-            </li>
-            <li>
-              <a href="/copyrights.html">Copyrights</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+      <nav class="topnav responsive" id="myTopnav">
+        <a href="/index.html">Home</a>
+        <a href="/description.html">Presentation</a>
+        <a href="/hornplayers.html" class="active">Horn Players</a>
+        <a href="/countries.html">Countries</a>
+        <a href="/copyrights.html">Copyrights</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </nav>
     </header>
 
     <main>
@@ -177,5 +163,14 @@
         </ul>
       </div>
     </footer>
+
+    <script>function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") x.className += " responsive";
+    else x.className = "topnav";
+}
+
+</script>
+
   </body>
 </html>

@@ -152,31 +152,52 @@ figcaption {
   text-align: center;
 }
 
+audio {
+  display: block;
+}
+
 /**************************/
 /* MAIN NAVIGTATION */
 /**************************/
 
-.menu-links {
-  max-width: 100%;
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+  padding: 0 5vw;
+  z-index: 10;
+}
+
+.float-nav {
   float: right;
-  list-style: none;
-  margin: 2rem 3rem 2rem 0;
-  position: sticky;
-  top: 0;
-  right: 0;
 }
 
-.menu-links li {
-  display: inline-block;
-  margin-left: 3rem;
-  color: var(--secondary-light-color);
-  font-size: 2rem;
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 1.4rem 1.6rem;
+  text-decoration: none;
+  font-size: 1.7rem;
 }
 
-.dark-background {
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 1rem;
-  padding: 2rem 3rem 2rem 0;
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: rgb(221, 221, 221, 0.8);
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: rgb(229, 136, 29, 0.8);
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
 }
 
 /**************************/

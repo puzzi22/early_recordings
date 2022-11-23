@@ -13,14 +13,15 @@
 
   <body class="page-home">
     <header>
-      <nav class="container container-mobile">
-        <ul class="menu-links dark-background">
-          <li><a href="/description.html">Project Description</a></li>
-          <li><a href="/hornplayers.html">Horn Players</a></li>
-          <li><a href="/countries.html">Countries</a></li>
-          <li><a href="#">Chronology</a></li>
-          <li><a href="/copyrights.html">Copyrights</a></li>
-        </ul>
+      <nav class="topnav responsive" id="myTopnav">
+        <a href="/index.html" class="active">Home</a>
+        <a href="/description.html">Presentation</a>
+        <a href="/hornplayers.html">Horn Players</a>
+        <a href="/countries.html">Countries</a>
+        <a href="/copyrights.html">Copyrights</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
       </nav>
     </header>
 
@@ -47,12 +48,29 @@
       <div class="container container-mobile">
         <span>2022 © Pierre-Antoine Tremblay</span>
         <ul class="legal-links">
-          <li><a href="">Terms and Conditions</a></li>
-          <li><a href="">Privacy</a></li>
-          <li><a href="">Cookies</a></li>
-          <li><a href="">FAQ</a></li>
+          <li>
+            <a href="">Terms and Conditions</a>
+          </li>
+          <li>
+            <a href="">Privacy</a>
+          </li>
+          <li>
+            <a href="">Cookies</a>
+          </li>
+          <li>
+            <a href="">FAQ</a>
+          </li>
         </ul>
       </div>
     </footer>
+
+    <script>function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") x.className += " responsive";
+    else x.className = "topnav";
+}
+
+</script>
+    
   </body>
 </html>

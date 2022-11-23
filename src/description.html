@@ -14,39 +14,39 @@
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/general.css" />
     <link rel="stylesheet" href="./css/queries.css" />
-    <script type="module" src="app.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script type="module" src="./app.js"></script>
   </head>
 
   <body class="page-home">
     <header class="one-third">
-      <div class="flex-container">
-        <div class="logo dark-background">
-          <a href="index.html">Early_Horn_Recordings_</a>
-        </div>
-        <nav class="container container-mobile">
-          <ul class="menu-links dark-background">
-            <li>Project Description</li>
-            <li>
-              <a href="hornplayers.html">Horn Players</a>
-            </li>
-            <li>
-              <a href="countries.html">Countries</a>
-            </li>
-            <li>
-              <a href="#">Chronology</a>
-            </li>
-            <li>
-              <a href="copyrights.html">Copyrights</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+      <nav class="topnav responsive" id="myTopnav">
+        <a href="index.html">Home</a>
+        <a href="description.html" class="active">Presentation</a>
+        <a href="hornplayers.html">Horn Players</a>
+        <a href="countries.html">Countries</a>
+        <a href="copyrights.html">Copyrights</a>
+        <a href="javascript:void(0);" class="icon" onclick="mobileNavBar()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </nav>
     </header>
     <main>
       <div class="container container-mobile">
         <section>
           <div class="container">
             <h1 class="section-title">Project Description</h1>
+            <figure>
+              <img
+                class="portrait"
+                src="./img/stiegler_quartett.jpg"
+                alt="The Stiegler Horn Quartet"
+              />
+              <figcaption>The Stiegler Quartet in 1913: Karl Stiegler, Rudolf Vargits, Karl Romagnoli, Karl Wesecky (from left to right)</figcaption>
+            </figure>
             <p class="lead">
               In
               <time datetime="1878">1877</time>
@@ -124,7 +124,7 @@
               <li>
                 <time datetime="1929">1929</time>: Saint-Saëns'
                 <cite lang="fr">Romance en fa, op. 36</cite>
-                by Édouard Vuillermoz
+                by Édouard Vuillermoz (<a href="https://sd-g1.archive-host.com/membres/playlist/9df49127b0cfab8b2d70d58ce9073291caa5e492/Vincent_Andrieux/Extrait_K.m4a" target="_blank">excerpt</a>)
               </li>
             </ul>
           </div>
@@ -151,5 +151,16 @@
         </ul>
       </div>
     </footer>
+
+    <!-- <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script> -->
   </body>
 </html>

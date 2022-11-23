@@ -131,27 +131,43 @@ figcaption {
   font-style: italic;
 }
 
-.menu-links {
-  max-width: 100%;
+audio {
+  display: block;
+}
+
+.topnav {
+  z-index: 10;
+  background-color: #000c;
+  padding: 0 5vw;
+  overflow: hidden;
+}
+
+.float-nav {
   float: right;
-  margin: 2rem 3rem 2rem 0;
-  list-style: none;
-  position: sticky;
-  top: 0;
-  right: 0;
 }
 
-.menu-links li {
-  color: var(--secondary-light-color);
-  margin-left: 3rem;
-  font-size: 2rem;
-  display: inline-block;
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 1.4rem 1.6rem;
+  font-size: 1.7rem;
+  text-decoration: none;
+  display: block;
 }
 
-.dark-background {
-  background-color: #00000080;
-  border-radius: 1rem;
-  padding: 2rem 3rem 2rem 0;
+.topnav a:hover {
+  color: #000;
+  background-color: #dddc;
+}
+
+.topnav a.active {
+  color: #fff;
+  background-color: #e5881dcc;
+}
+
+.topnav .icon {
+  display: none;
 }
 
 footer {

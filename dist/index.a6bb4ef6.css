@@ -3,6 +3,19 @@
   margin: 0 auto;
 }
 
+@media only screen and (max-width: 1180px) {
+  figure {
+    width: 50%;
+    float: right;
+    display: inline;
+  }
+
+  .portrait {
+    width: 100%;
+    height: auto;
+  }
+}
+
 @media only screen and (max-width: 767px) {
   .more li a {
     font-size: 2rem;
@@ -17,24 +30,21 @@
   }
 
   figure {
+    width: 100%;
     margin-left: 0;
+    display: block;
   }
 
   .featured {
     margin: 0;
-    padding: 0 2rem;
+    padding: 0;
     bottom: 0;
-    left: 0;
+    left: 5%;
     overflow-x: hidden;
   }
 
   #featured-span {
     font-size: 3.5rem;
-  }
-
-  .dark-background {
-    margin-top: 2rem;
-    padding: 1rem;
   }
 
   footer {
@@ -81,9 +91,11 @@
 
   h1 {
     font-size: 3.5rem;
+    line-height: 1.5;
   }
 
   .title {
+    margin-bottom: 1rem;
     font-size: 2.5rem;
   }
 
@@ -93,7 +105,8 @@
   }
 
   .featured-text {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    line-height: 1.5;
   }
 
   h2 {
@@ -101,6 +114,7 @@
   }
 
   .featured h2 {
+    margin-bottom: 1rem;
     font-size: 2rem;
   }
 
@@ -110,58 +124,30 @@
   }
 }
 
-@media only screen and (max-width: 992px) {
-  .featured {
-    padding: 0 2rem;
-    bottom: 5%;
-    left: 5%;
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {
+    display: none;
   }
 
-  .featured-text {
-    font-size: 2rem;
-  }
-
-  .menu-links {
-    float: left;
-    margin: 1rem 0;
-    padding: 0;
-    display: contents;
-  }
-
-  .menu-links li {
-    float: none;
-    margin: 0 1.5rem;
-    font-size: 2rem;
+  .topnav a.icon {
+    float: right;
     display: block;
   }
 
-  .menu-links li a {
-    float: left;
+  .topnav.responsive {
+    position: relative;
+  }
+
+  .topnav.responsive a.icon {
+    position: absolute;
+    top: 0;
+    right: 5vw;
+  }
+
+  .topnav.responsive a {
     float: none;
-    font-size: 2rem;
-    line-height: 1.8;
+    text-align: center;
     display: block;
-  }
-}
-
-@media only screen and (max-width: 1180px) {
-  .flex-container {
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-  }
-
-  .logo {
-    align-items: center;
-    margin-bottom: 0;
-    margin-right: 3rem;
-    font-size: 3rem;
-  }
-
-  .menu-links {
-    align-items: center;
-    margin-top: 0;
-    margin-left: 3rem;
   }
 }
 

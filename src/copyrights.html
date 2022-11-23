@@ -20,27 +20,16 @@
   <body class="page-home">
     <div class="content">
       <header class="one-third">
-        <div class="flex-container">
-          <div class="logo dark-background">
-            <a href="index.html">Early_Horn_Recordings_</a>
-          </div>
-          <nav class="container container-mobile">
-            <ul class="menu-links dark-background">
-              <li><a href="description.html">Project Description</a></li>
-              <li>Horn Players</li>
-              <li>
-                <a href="hornplayers.html">Horn Players</a>
-              </li>
-              <li>
-                <a href="countries.html">Countries</a>
-              </li>
-              <li>
-                <a href="#">Chronology</a>
-              </li>
-              <li>Copyrights</li>
-            </ul>
-          </nav>
-        </div>
+        <nav class="topnav responsive" id="myTopnav">
+          <a href="index.html">Home</a>
+          <a href="description.html">Presentation</a>
+          <a href="hornplayers.html">Horn Players</a>
+          <a href="countries.html">Countries</a>
+          <a href="copyrights.html" class="active">Copyrights</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </nav>
       </header>
 
       <main>
@@ -62,7 +51,7 @@
                 later. This is the reason why most classical music recordings
                 from the period 1900-1950 can be freely distributed, and
                 available online on platforms like
-                <a href="https://www.youtube.com">YouTube</a>, from which most
+                <a href="https://www.youtube.com" target="_blank">YouTube</a>, from which most
                 sound samples on this website are derived.
               </p>
               <p>
@@ -70,21 +59,21 @@
                 English from a Wikipedia French page. Use is allowed by law:
                 <span class="licence">
                   <a
-                    href="https://creativecommons.org/licenses/by-sa/3.0/deed.fr"
+                    href="https://creativecommons.org/licenses/by-sa/3.0/deed.fr" target="_blank"
                     >Content with licence CC-BY-SA 3.0</a
                   >. Source : Article
                   <em>
                     <a
-                      href="http://fr.wikipedia.org/wiki/%C3%89douard_Vuillermoz"
+                      href="http://fr.wikipedia.org/wiki/%C3%89douard_Vuillermoz" target="_blank"
                       >Édouard Vuillermoz</a
                     >
                   </em>
                   from
-                  <a href="https://fr.wikipedia.org/" lang="fr"
+                  <a href="https://fr.wikipedia.org/" lang="fr" target="_blank"
                     >Wikipédia en français</a
                   >
                   (<a
-                    href="http://fr.wikipedia.org/w/index.php?title=%C3%89douard_Vuillermoz&action=history"
+                    href="http://fr.wikipedia.org/w/index.php?title=%C3%89douard_Vuillermoz&action=history" target="_blank"
                     >authors</a
                   >).</span
                 >
@@ -94,21 +83,25 @@
                 All pictures are free of copyrights and come from websites such
                 as
                 <a
-                  href="https://fr.wikipedia.org/wiki/Wikipédia:Accueil_principal"
+                  href="https://fr.wikipedia.org/wiki/Wikipédia:Accueil_principal" target="_blank"
                   >Wikipedia</a
                 >
-                and
+                ,
                 <a
-                  href="https://gallica.bnf.fr/accueil/en/content/accueil-en?mode=desktop"
+                  href="https://gallica.bnf.fr/accueil/en/content/accueil-en?mode=desktop" target="_blank"
                   >Gallica</a
                 >
                 (the digital library of the
                 <span lang="fr">
                   <a
-                    href="https://www.bnf.fr/en/bibliotheque-nationale-de-france-catalogue-general"
+                    href="https://www.bnf.fr/en/bibliotheque-nationale-de-france-catalogue-general" target="_blank"
                     >Bibliothèque Nationale de France</a
-                  > </span
-                >).
+                  ></span
+                >), and the
+                <a
+                  href="https://www.musiklexikon.ac.at/ml/musik_S/Stiegler_Karl.xml" lang="de" target="_blank"
+                  >Oesterreichisches Musiklexikon</a
+                >
               </p>
             </div>
           </section>
@@ -135,5 +128,16 @@
         </ul>
       </div>
     </footer>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
   </body>
 </html>

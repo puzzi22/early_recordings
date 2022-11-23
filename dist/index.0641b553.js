@@ -560,6 +560,12 @@ function resetSelectorColor() {
         item.setAttribute("style", "background: var(--primary-color);");
     });
 }
+function mobileNavBar() {
+    console.log("I'm inside the function");
+    let x = document.getElementById("myTopnav");
+    if (x.className === "topnav") x.className += " responsive";
+    else x.className = "topnav";
+}
 
 },{}]},["7Aums","bNKaB"], "bNKaB", "parcelRequirec240")
 
