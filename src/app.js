@@ -31,7 +31,7 @@ function resetSelectorColor() {
   });
 }
 
-function myFunction2() {
+function toggleMobileNav() {
   console.log("I'm in!")
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {

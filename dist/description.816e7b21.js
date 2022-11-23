@@ -26,7 +26,7 @@ function resetSelectorColor() {
         item.setAttribute("style", "background: var(--primary-color);");
     });
 }
-function myFunction2() {
+function toggleMobileNav() {
     console.log("I'm in!");
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") x.className += " responsive";
