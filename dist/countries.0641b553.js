@@ -560,13 +560,7 @@ function resetSelectorColor() {
         item.setAttribute("style", "background: var(--primary-color);");
     });
 }
-function toggleMobileNav() {
-    console.log("I'm in!");
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") x.className += " responsive";
-    else x.className = "topnav";
-}
 
 },{}]},["7Aums","bNKaB"], "bNKaB", "parcelRequirec240")
 
-//# sourceMappingURL=index.0641b553.js.map
+//# sourceMappingURL=countries.0641b553.js.map

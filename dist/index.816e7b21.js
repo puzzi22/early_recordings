@@ -26,11 +26,5 @@ function resetSelectorColor() {
         item.setAttribute("style", "background: var(--primary-color);");
     });
 }
-function toggleMobileNav() {
-    console.log("I'm in!");
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") x.className += " responsive";
-    else x.className = "topnav";
-}
 
 //# sourceMappingURL=index.816e7b21.js.map
