@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A webpage about the first recordings of horn players in the early 20th century",
   "source": "src/index.html",
+  "browserslist": "> 0.3%, last 2 versions, not dead",
   "scripts": {
     "start": "npm-run-all clean parcel:dev",
     "build": "npm-run-all clean parcel:build",
