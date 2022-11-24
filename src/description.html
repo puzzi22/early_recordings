@@ -18,7 +18,14 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <script type="text/javascript" src="mobilenav.js"></script>
+    <script src="mobilenav.js"></script>
+    <script src="../node_modules/blazy/blazy.js"></script>
+    <script>
+      (function () {
+        // Initialize
+        var bLazy = new Blazy();
+      })();
+    </script>
   </head>
 
   <body class="page-home">
@@ -45,7 +52,10 @@
                 src="./img/stiegler_quartett.jpg"
                 alt="The Stiegler Horn Quartet"
               />
-              <figcaption>The Stiegler Quartet in 1913: Karl Stiegler, Rudolf Vargits, Karl Romagnoli, Karl Wesecky</figcaption>
+              <figcaption>
+                The Stiegler Quartet in 1913: Karl Stiegler, Rudolf Vargits,
+                Karl Romagnoli, Karl Wesecky
+              </figcaption>
             </figure>
             <p class="lead">
               In
@@ -98,7 +108,7 @@
                 by Karl Stiegler (<time datetime="1876">1876</time>-<time
                   datetime="1932"
                   >1932</time
-                >) leading the quartet
+                >)
               </li>
               <li>
                 <time datetime="1912">1912</time>: Wagner's
@@ -124,9 +134,23 @@
               <li>
                 <time datetime="1929">1929</time>: Saint-Saëns'
                 <cite lang="fr">Romance en fa, op. 36</cite>
-                by Édouard Vuillermoz (<a href="https://sd-g1.archive-host.com/membres/playlist/9df49127b0cfab8b2d70d58ce9073291caa5e492/Vincent_Andrieux/Extrait_K.m4a" target="_blank" class="excerpt">excerpt</a>)
+                by Édouard Vuillermoz (<a
+                  href="https://sd-g1.archive-host.com/membres/playlist/9df49127b0cfab8b2d70d58ce9073291caa5e492/Vincent_Andrieux/Extrait_K.m4a"
+                  target="_blank"
+                  class="excerpt"
+                  >excerpt</a
+                >)
               </li>
             </ul>
+            <iframe
+              width="560"
+              height="315"
+              class="b-lazy presentation_vid"
+              data-src="https://www.youtube.com/embed/9jX0364RUP0"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
           </div>
         </section>
       </div>
