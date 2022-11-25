@@ -19,11 +19,18 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <script src="../mobilenav.js"></script>
+    <script src="../../node_modules/blazy/blazy.js"></script>
+    <script>
+      (function () {
+        // Initialize
+        var bLazy = new Blazy();
+      })();
+    </script>
   </head>
 
   <body class="page-home">
     <header class="one-third">
-      <nav class="topnav responsive" id="myTopnav">
+      <nav class="topnav" id="myTopnav">
         <a href="../index.html">Home</a>
         <a href="../description.html">Presentation</a>
         <a href="../hornplayers.html" class="active">Horn Players</a>
@@ -87,7 +94,8 @@
             <iframe
               width="560"
               height="315"
-              src="https://www.youtube.com/embed/SyM1HUypJQo"
+              class="b-lazy"
+              data-src="https://www.youtube.com/embed/SyM1HUypJQo"
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen

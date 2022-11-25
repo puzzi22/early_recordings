@@ -87,7 +87,7 @@ ul {
 .logo a {
   color: var(--secondary-light-color);
   font-size: 2rem;
-}
+  }
 
 .logo a:hover {
   color: var(--primary-color);
