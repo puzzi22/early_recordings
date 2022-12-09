@@ -3,25 +3,10 @@
 /**************************/
 
 header {
-  /* background-image: -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      from(rgba(0, 0, 0, 0.4)),
-      to(rgba(0, 0, 0, 0.9))
-    ),
-    url(../img/1895conservatoire.webp);
-  background-image: -webkit-linear-gradient(
-      rgba(0, 0, 0, 0.4),
-      rgba(0, 0, 0, 1)
-    ),
-    url(../img/1895conservatoire.webp);
-  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1)),
-    url(../img/1895conservatoire.webp); */
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1)), image-set(
-      url(../img/1895conservatoire-large-800.webp) 1x,
-      url(../img/1895conservatoire-xlarge-1200.webp) 2x,
-      url(../img/1895conservatoire-xxlarge-1900.webp) 3x);
+      url(../img/conservatoire.webp?width=800) 1x,
+      url(../img/conservatoire.webp?width=1200) 2x,
+      url(../img/conservatoire.webp?width=1800) 3x);
   background-size: cover;
   background-position: top;
   height: 100vh;
