@@ -17,7 +17,7 @@ function myFunction(selector, nationality) {
           hornist.setAttribute("style", "display: none;");
         } else {
           hornist.setAttribute("style", "display: list-item;");
-          selector2.setAttribute("style", "background: var(--primary-color2);");
+          selector2.setAttribute("style", "background: var(--secondary-color);");
         }
       });
     });
@@ -27,6 +27,6 @@ function myFunction(selector, nationality) {
 function resetSelectorColor() {
   const countrySelector = Array.from(document.getElementsByClassName("item"));
   countrySelector.forEach((item) => {
-    item.setAttribute("style", "background: var(--primary-color);");
+    item.setAttribute("style", "background: var(--secondary-color;");
   });
 }
