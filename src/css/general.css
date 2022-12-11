@@ -165,10 +165,21 @@ audio {
   overflow: hidden;
   padding: 0 5vw;
   z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.float-nav {
+/* .float-nav {
   float: right;
+} */
+
+.nav-list li {
+  display: inline-block;
+}
+
+ul.nav-list {
+  margin-bottom: 0;
 }
 
 /* Style the links inside the navigation bar */
@@ -186,6 +197,7 @@ audio {
 .topnav a:hover {
   background-color: rgb(221, 221, 221, 0.8);
   color: black;
+  border-radius: 6%;
 }
 
 /* Add an active class to highlight the current page */
@@ -197,6 +209,10 @@ audio {
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
   display: none;
+}
+
+.logo-nav {
+  width: 15rem;
 }
 
 /**************************/
@@ -215,20 +231,19 @@ footer {
   min-height: calc(100vh - 16rem);
 }
 
-.legal-links {
+/* .footer-links {
   float: right;
   list-style: none;
-}
+} */
 
-.legal-links li {
+.footer-links li {
   display: block;
-  margin-left: 3rem;
   text-align: right;
   line-height: 2;
 }
 
-.legal-links li a {
-  font-size: 1.4rem;
+.footer-links li a {
+  font-size: 1.6rem;
 }
 
 .footer-container {
@@ -236,4 +251,8 @@ footer {
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 20px;
   align-items: center;
+}
+
+.logo {
+  width: 20rem;
 }

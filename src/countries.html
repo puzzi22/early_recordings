@@ -29,14 +29,30 @@
   <body class="page-home">
     <header class="one-third">
       <nav class="topnav" id="myTopnav">
-        <a href="index.html">Home</a>
-        <a href="description.html">Presentation</a>
-        <a href="hornplayers.html">Horn Players</a>
-        <a href="countries.html" class="active">Countries</a>
-        <a href="copyrights.html">Copyrights</a>
-        <a href="javascript:void(0);" class="icon" onclick="toggleMobileNav()">
-          <i class="fa fa-bars"></i>
-        </a>
+        <div>
+          <a href="./index.html">
+            <img
+              class="logo-nav active"
+              src="./img/logo-svg-transparent-early-horn-recordings.svg"
+              alt="Early Horn Recordings Logo"
+            />
+          </a>
+        </div>
+        <ul class="nav-list">
+          <li><a href="description.html">Presentation</a></li>
+          <li><a href="hornplayers.html">Horn Players</a></li>
+          <li><a href="countries.html" class="active">Countries</a></li>
+          <li><a href="copyrights.html">Copyrights</a></li>
+          <li>
+            <a
+              href="javascript:void(0);"
+              class="icon"
+              onclick="toggleMobileNav()"
+            >
+              <i class="fa fa-bars"></i>
+            </a>
+          </li>
+        </ul>
       </nav>
     </header>
 
@@ -168,14 +184,34 @@
     </main>
 
     <footer>
-      <div class="container container-mobile">
-        <span>2022 © Pierre-Antoine Tremblay</span>
-        <ul class="legal-links">
-          <li><a href="">Terms and Conditions</a></li>
-          <li><a href="">Privacy</a></li>
-          <li><a href="">Cookies</a></li>
-          <li><a href="">FAQ</a></li>
-        </ul>
+      <div class="container container-mobile footer-container">
+        <div class="logo">
+          <a href="./index.html">
+            <img
+              src="./img/logo-svg-transparent-early-horn-recordings.svg"
+              alt="Early Horn Recordings Logo"
+            />
+          </a>
+        </div>
+        <div>
+          <p>&#169 Pierre-Antoine Tremblay. 2022</p>
+        </div>
+        <div>
+          <nav class="footer-links">
+            <li>
+              <a href="./description.html">Presentation</a>
+            </li>
+            <li>
+              <a href="./hornplayers.html">Horn Players</a>
+            </li>
+            <li>
+              <a href="./countries.html">Countries</a>
+            </li>
+            <li>
+              <a href="./copyrights.html">Copyrights</a>
+            </li>
+          </nav>
+        </div>
       </div>
     </footer>
   </body>
