@@ -12,6 +12,15 @@ header {
   height: 100vh;
   width: auto;
   background-attachment: fixed;
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 30% 100%, 0 100%);
+}
+
+.parent-header {
+  background-color: black;
+}
+
+#hero {
+  clip-path: polygon(0 0, 100% 0, 100% 30%, 30% 100%, 0 100%);
 }
 
 .one-third {

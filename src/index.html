@@ -22,18 +22,24 @@
   </head>
 
   <body class="page-home">
-    <header>
-      <nav class="topnav" id="myTopnav">
-        <a href="index.html" class="active">Home</a>
-        <a href="description.html">Presentation</a>
-        <a href="hornplayers.html">Horn Players</a>
-        <a href="countries.html">Countries</a>
-        <a href="copyrights.html">Copyrights</a>
-        <a href="javascript:void(0);" class="icon" onclick="toggleMobileNav()">
-          <i class="fa fa-bars"></i>
-        </a>
-      </nav>
-    </header>
+    <div class="parent-header">
+      <header id="hero">
+        <nav class="topnav" id="myTopnav">
+          <a href="index.html" class="active">Home</a>
+          <a href="description.html">Presentation</a>
+          <a href="hornplayers.html">Horn Players</a>
+          <a href="countries.html">Countries</a>
+          <a href="copyrights.html">Copyrights</a>
+          <a
+            href="javascript:void(0);"
+            class="icon"
+            onclick="toggleMobileNav()"
+          >
+            <i class="fa fa-bars"></i>
+          </a>
+        </nav>
+      </header>
+    </div>
 
     <main>
       <div class="container container-mobile">
@@ -55,22 +61,34 @@
     </main>
 
     <footer>
-      <div class="container container-mobile">
-        <span>2022 © Pierre-Antoine Tremblay</span>
-        <ul class="legal-links">
-          <li>
-            <a href="">Terms and Conditions</a>
-          </li>
-          <li>
-            <a href="">Privacy</a>
-          </li>
-          <li>
-            <a href="">Cookies</a>
-          </li>
-          <li>
-            <a href="">FAQ</a>
-          </li>
-        </ul>
+      <div class="container container-mobile footer-container">
+        <div class="logo">
+          <a href="./index.html">
+            <img
+              src="./img/logo-svg-transparent-early-horn-recordings.svg"
+              alt="Early Horn Recordings Logo"
+            />
+          </a>
+        </div>
+        <div>
+          <p>© Pierre-Antoine Tremblay. 2022</p>
+        </div>
+        <div>
+          <ul class="legal-links">
+            <li>
+              <a href="./description.html">Presentation</a>
+            </li>
+            <li>
+              <a href="./hornplayers.html">Horn Players</a>
+            </li>
+            <li>
+              <a href="./countries.html">Countries</a>
+            </li>
+            <li>
+              <a href="./copyrights.html">Copyrights</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
   </body>
