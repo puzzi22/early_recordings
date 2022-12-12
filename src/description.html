@@ -47,11 +47,12 @@
           <li><a href="copyrights.html">Copyrights</a></li>
           <li>
             <a
+              aria-label="navigation menu link"
               href="javascript:void(0);"
               class="icon"
               onclick="toggleMobileNav()"
             >
-              <i class="fa fa-bars"></i>
+              <span class="fa fa-bars"></span>
             </a>
           </li>
         </ul>
@@ -64,18 +65,20 @@
             <h1 class="section-title">Project Description</h1>
             <figure>
               <img
-              class="portrait"
-              src="./img/stiegler.webp"
-              srcset="
-              ./img/stiegler.webp?width=320 320w,
-              ./img/stiegler.webp?width=600 600w,
-              ./img/stiegler.webp?width=800 800w,
-              ./img/stiegler.webp?width=1200 1200w"
-              sizes="(max-width: 767px) 90vw, (max-width: 1180px) 50vw, 363px"
-              alt="Painting of horn player Karl Stiegler"
-            />
+                class="portrait"
+                src="./img/stiegler.webp"
+                srcset="
+                  ./img/stiegler.webp?width=320   320w,
+                  ./img/stiegler.webp?width=600   600w,
+                  ./img/stiegler.webp?width=800   800w,
+                  ./img/stiegler.webp?width=1200 1200w
+                "
+                sizes="(max-width: 767px) 90vw, (max-width: 1180px) 50vw, 363px"
+                alt="Painting of horn player Karl Stiegler"
+              />
               <figcaption>
-                Prof. Karl Stiegler (1932) portrayed by Broncia Koller-Pinell (1863-1934)
+                Prof. Karl Stiegler (1932) portrayed by Broncia Koller-Pinell
+                (1863-1934)
               </figcaption>
             </figure>
             <p class="lead">
@@ -141,7 +144,7 @@
               </li>
               <li>
                 <time datetime="1912">1912</time>: Saint-Saëns'
-                <cite>Romance en fa, op. 36</cite>
+                <cite>Romance in F, op. 36</cite>
                 by Anton Horner
               </li>
               <li>
@@ -154,13 +157,55 @@
               </li>
               <li>
                 <time datetime="1929">1929</time>: Saint-Saëns'
-                <cite lang="fr">Romance en fa, op. 36</cite>
-                by Édouard Vuillermoz (<a
+                <cite lang="fr">Romance in F, op. 36</cite>
+                by Édouard Vuillermoz
+                <a
                   href="https://sd-g1.archive-host.com/membres/playlist/9df49127b0cfab8b2d70d58ce9073291caa5e492/Vincent_Andrieux/Extrait_K.m4a"
                   target="_blank"
                   class="excerpt"
-                  >excerpt</a
-                >)
+                  title="Click to listen!"
+                >
+                  <!-- <svg
+                    width="48px"
+                    height="30px"
+                    viewBox="0 0 120 100"
+                    fill="none"
+                    alt="Play button"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <use xlink:href="#triangles"></use>
+                  </svg> -->
+                  <svg
+                    width="48px"
+                    height="30px"
+                    viewBox="0 0 120 100"
+                    fill="none"
+                    alt="Play button"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g id="triangles">
+                      <g id="lightGroup">
+                        <path
+                          id="light1"
+                          opacity="0.6"
+                          d="M53.4872 46.3509C55.7436 47.6536 55.7436 50.9105 53.4872 52.2132L13.718 75.174C11.4615 76.4767 8.64104 74.8483 8.64104 72.2428L8.64104 26.3213C8.64104 23.7158 11.4616 22.0874 13.718 23.3901L53.4872 46.3509Z"
+                        />
+                      </g>
+                      <g id="darkGroup">
+                        <path
+                          id="dark1"
+                          opacity="0.8"
+                          d="M74.9231 46.915C77.1795 48.2177 77.1795 51.4746 74.9231 52.7773L34.3077 76.2266C32.0513 77.5294 29.2308 75.9009 29.2308 73.2955L29.2308 26.3968C29.2308 23.7914 32.0513 22.1629 34.3077 23.4657L74.9231 46.915Z"
+                        />
+                        <path
+                          id="dark2"
+                          opacity="0.8"
+                          d="M54.6154 46.915C56.8718 48.2177 56.8718 51.4746 54.6154 52.7773L14 76.2266C11.7436 77.5294 8.92307 75.9009 8.92307 73.2955L8.92308 26.3968C8.92308 23.7914 11.7436 22.1629 14 23.4657L54.6154 46.915Z"
+                        />
+                      </g>
+                    </g>
+                  </svg>
+                </a>
               </li>
             </ul>
             <iframe
@@ -188,7 +233,7 @@
           </a>
         </div>
         <div>
-          <p>&#169 Pierre-Antoine Tremblay. 2022</p>
+          <p>&#169; Pierre-Antoine Tremblay. 2022</p>
         </div>
         <div>
           <nav class="footer-links">

@@ -55,9 +55,9 @@
     font-size: 3.5rem;
   }
 
-/**************************/
-/* FOOTER */
-/**************************/
+  /**************************/
+  /* FOOTER */
+  /**************************/
 
   footer {
     font-size: 1.3rem;
@@ -69,8 +69,8 @@
   }
 
   .footer-container {
-   display: flex;
-   flex-direction: column;
+    display: flex;
+    flex-direction: column;
   }
 
   .logo {
@@ -160,11 +160,11 @@
     height: auto;
   }
 
-/**************************/
-/* MAIN NAVIGATION */
-/**************************/
+  /**************************/
+  /* MAIN NAVIGATION */
+  /**************************/
 
-/* When the screen is less than 767 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+  /* When the screen is less than 767 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
   .topnav li a {
     display: none;
   }
@@ -178,7 +178,7 @@
     display: block;
   }
 
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
   .topnav.responsive {
     position: relative;
     flex-direction: column;
@@ -195,5 +195,19 @@
     float: none;
     display: block;
     text-align: center;
+  }
+}
+
+/**************************/
+/* VERTICAL ORIENTATION (PORTRAIT) */
+/**************************/
+@media only screen and (orientation: portrait) and (max-width: 767px) {
+  header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1)),
+      image-set(
+        url(../img/conservatoire-portrait.webp?width=800) 1x,
+        url(../img/conservatoire-portrait.webp?width=1200) 2x,
+        url(../img/conservatoire-portrait.webp?width=1800) 3x
+      );
   }
 }

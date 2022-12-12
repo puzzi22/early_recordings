@@ -3,10 +3,12 @@
 /**************************/
 
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1)), image-set(
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1)),
+    image-set(
       url(../img/conservatoire.webp?width=800) 1x,
       url(../img/conservatoire.webp?width=1200) 2x,
-      url(../img/conservatoire.webp?width=1800) 3x);
+      url(../img/conservatoire.webp?width=1800) 3x
+    );
   background-size: cover;
   background-position: top;
   height: 100vh;
@@ -47,7 +49,7 @@ header {
 }
 
 /**************************/
-/* PRESENTATION */
+/* DESCRIPTION */
 /**************************/
 
 .benefits li {
@@ -57,6 +59,14 @@ header {
 
 .presentation_vid {
   margin-top: 3rem;
+}
+
+.listen-icon {
+  display: inline;
+  width: 2rem;
+  color: var(--primary-color);
+  filter: invert(55%) sepia(98%) saturate(960%) hue-rotate(351deg)
+    brightness(95%) contrast(87%);
 }
 
 /**************************/
