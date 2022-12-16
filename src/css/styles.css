@@ -14,7 +14,7 @@ header {
   height: 100vh;
   width: auto;
   background-attachment: fixed;
-  clip-path: circle(150vh at 50% -100vh);
+  clip-path: circle(250vh at 50% -200vh);
 }
 
 .parent-header {
@@ -22,7 +22,7 @@ header {
 }
 
 #hero {
-  clip-path: circle(150vh at 50% -80vh);
+  clip-path: circle(170vh at 50% -80vh);
 }
 
 .one-third {
@@ -130,7 +130,7 @@ article:last-child {
 }
 
 .hornists-grid article {
-  height: 22rem;
+  height: 20rem;
 }
 
 .article-1,
@@ -165,25 +165,17 @@ a .pannel-image:hover {
   overflow: hidden;
 }
 
-/* .article-text p {
-  margin-bottom: 0.5rem;
-} */
-
 .dates {
   display: block;
   font-style: normal;
   font-weight: 400;
   font-size: 1.4rem;
+  margin-bottom: 1rem;
 }
 
 .flag {
   margin-left: 1rem;
   font-size: 1.4rem;
-  /* height: 1.3rem; */
-  /* display: inl; */
-  /* width: 30px;
-  height: 30px; */
-  /* margin-bottom: 1rem; */
 }
 
 .bio li {
@@ -198,36 +190,30 @@ article {
 .hornists-grid article {
   display: flex;
   flex-direction: row;
-  gap: 1rem;
+  gap: 2rem;
   padding: 1.2rem 1.2rem;
 }
 
 .image-wrapper {
   position: relative;
-  width: 50%;
+  width: 33%;
   overflow: hidden;
   flex: 1;
 }
 
 .article-text {
-  flex: 1;
-  width: 50%;
-  flex: 1;
+  flex: 33%;
+  width: 67%;
 }
 
 .pannel-image {
   position: absolute;
-  height: auto;
   width: 100%;
   height: 100%;
   top: 50%;
   transform: translateY(-50%);
   object-fit: cover;
 }
-
-/* .article-1 h2 {
-  margin: 0;
-} */
 
 .image-wrapper img,
 .article-text a {
@@ -237,7 +223,6 @@ article {
 
 .hornists-grid {
   display: grid;
-  /* grid-auto-columns: minmax(1rem, auto); */
   grid-auto-columns: 1fr;
   grid-auto-rows: auto;
   gap: 2rem;
@@ -255,104 +240,6 @@ article {
 
 .article-text a:hover {
   color: var(--secondary-color);
-}
-
-/* .article-text a:hover {
-  color: var(--secondary-color);
-  
-} */
-
-@media only screen and (min-width: 768px) {
-  .article-1 {
-    grid-column: 1 / 4;
-    grid-row: 1 / 2;
-  }
-
-  .article-2 {
-    grid-column: 2 / 5;
-    grid-row: 2 / 3;
-  }
-
-  .article-3 {
-    grid-column: 1 / 4;
-    grid-row: 3 / 4;
-  }
-
-  .article-4 {
-    grid-column: 2 / 5;
-    grid-row: 4 / 5;
-  }
-
-  .article-5 {
-    grid-column: 1 / 4;
-    grid-row: 5 / 6;
-  }
-
-  .article-6 {
-    grid-column: 2 / 5;
-    grid-row: 6 / 7;
-  }
-
-  .article-7 {
-    grid-column: 1 / 4;
-    grid-row: 7 / 8;
-  }
-
-  /* .hornists-grid article {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    padding: 1.2rem 1.2rem;
-  } */
-
-  /* .image-wrapper {
-    position: relative;
-    width: 50%;
-    overflow: hidden;
-    flex: 1;
-  }
-
-  .article-text {
-    flex: 1;
-    width: 50%;
-    flex: 1;
-  } */
-
-  /* .article-text p,
-  .more {
-    font-size: 1.2rem;
-    margin-bottom: 0;
-    text-align: justify;
-    hyphens: auto;
-  } */
-
-  /* .pannel-image {
-    position: absolute;
-    height: auto;
-    width: 100%;
-    height: 100%;
-    top: 50%;
-    transform: translateY(-50%);
-    object-fit: cover;
-  } */
-
-  /* .article-1 h2 {
-    margin: 0;
-  } */
-
-  /* .image-wrapper img,
-  .article-text a {
-    margin: 0;
-    padding: 0;
-  }
-
-  .hornists-grid {
-    display: grid;
-    grid-auto-columns: minmax(1rem, auto);
-    grid-auto-columns: 1fr;
-    grid-auto-rows: auto;
-    gap: 2rem;
-  } */
 }
 
 /**************************/

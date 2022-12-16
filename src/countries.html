@@ -26,6 +26,13 @@
     />
     <script src="mobilenav.js"></script>
     <script type="module" src="app.js"></script>
+    <script src="/node_modules/blazy/blazy.js"></script>
+    <script>
+      (function () {
+        // Initialize
+        var bLazy = new Blazy();
+      })();
+    </script>
   </head>
 
   <body class="page-home">
@@ -78,12 +85,7 @@
 
             <div class="items">
               <div class="item france-selector">
-                <div class="item-image fib fi-fr">
-                  <!-- <img
-                    src="./img/paris.jpg?width=500"
-                    alt="Paris in the 1920's"
-                  /> -->
-                </div>
+                <div class="item-image fib fi-fr"></div>
                 <div class="item-text">
                   <div class="item-text-wrap">
                     <p class="item-text-category">France</p>
@@ -91,12 +93,7 @@
                 </div>
               </div>
               <div class="item germany-selector">
-                <div class="item-image fib fi-de">
-                  <!-- <img
-                    src="./img/berlin.jpg?width=500"
-                    alt="Berlin in the 1920's"
-                  /> -->
-                </div>
+                <div class="item-image fib fi-de"></div>
                 <div class="item-text">
                   <div class="item-text-wrap">
                     <p class="item-text-category">Germany</p>
@@ -104,12 +101,7 @@
                 </div>
               </div>
               <div class="item spain-selector">
-                <div class="item-image fib fi-es">
-                  <!-- <img
-                    src="./img/madrid.jpg?width=500"
-                    alt="Madrid in the 1920's"
-                  /> -->
-                </div>
+                <div class="item-image fib fi-es"></div>
                 <div class="item-text">
                   <div class="item-text-wrap">
                     <p class="item-text-category">Spain</p>
@@ -117,12 +109,7 @@
                 </div>
               </div>
               <div class="item uk-selector">
-                <div class="item-image fib fi-gb">
-                  <!-- <img
-                    src="./img/london.jpg?width=500"
-                    alt="London in the 1920's"
-                  /> -->
-                </div>
+                <div class="item-image fib fi-gb"></div>
                 <div class="item-text">
                   <div class="item-text-wrap">
                     <p class="item-text-category">United Kingdom</p>
@@ -130,12 +117,7 @@
                 </div>
               </div>
               <div class="item us-selector">
-                <div class="item-image fib fi-us">
-                  <!-- <img
-                    src="./img/nyc.jpg?width=500"
-                    alt="New York City in the 1920's"
-                  /> -->
-                </div>
+                <div class="item-image fib fi-us"></div>
                 <div class="item-text">
                   <div class="item-text-wrap">
                     <p class="item-text-category">United States</p>
@@ -143,12 +125,7 @@
                 </div>
               </div>
               <div class="item other-selector">
-                <div class="item-image fib fi-xx">
-                  <!-- <img
-                    src="./img/amsterdam.jpg?width=500"
-                    alt="Amsterdam in the 1920's"
-                  /> -->
-                </div>
+                <div class="item-image fib fi-xx"></div>
                 <div class="item-text">
                   <div class="item-text-wrap">
                     <p class="item-text-category">Others</p>
