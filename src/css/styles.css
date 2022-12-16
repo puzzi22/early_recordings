@@ -14,7 +14,7 @@ header {
   height: 100vh;
   width: auto;
   background-attachment: fixed;
-  clip-path: polygon(0 0, 100% 0, 100% 70%, 30% 100%, 0 100%);
+  clip-path: circle(150vh at 50% -100vh);
 }
 
 .parent-header {
@@ -22,7 +22,7 @@ header {
 }
 
 #hero {
-  clip-path: polygon(0 0, 100% 0, 100% 30%, 30% 100%, 0 100%);
+  clip-path: circle(150vh at 50% -80vh);
 }
 
 .one-third {
@@ -32,8 +32,9 @@ header {
 .featured {
   position: absolute;
   width: 90%;
-  bottom: 5%;
+  bottom: 0;
   left: 5%;
+  margin-bottom: 3rem;
 }
 
 #featured-span {
@@ -152,6 +153,7 @@ a .pannel-image:hover {
   transform: scale(1.01);
   overflow: hidden;
   top: 0;
+  left: 0;
 }
 
 .image-wrapper img {

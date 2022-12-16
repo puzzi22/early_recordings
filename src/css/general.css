@@ -136,6 +136,17 @@ figure {
   margin: auto;
   float: right;
   margin: 0 0 3rem 3rem;
+  width: 40rem;
+  max-width: 30vw;
+}
+
+.instrument-box figure {
+  width: 20rem;
+}
+
+.secundary-box figure {
+  float: left;
+  margin: 0 3rem 3rem 0;
 }
 
 figure img {
@@ -150,9 +161,25 @@ figcaption {
   word-break: normal;
 }
 
-audio {
+blockquote {
   display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 40px;
+  margin-right: 40px;
 }
+
+.author {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+/* audio {
+  display: block;
+} */
 
 /**************************/
 /* MAIN NAVIGTATION */

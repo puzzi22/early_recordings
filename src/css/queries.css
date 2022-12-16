@@ -7,7 +7,7 @@
 /* TABLET QUERIES */
 /**************************/
 
-@media only screen and (max-width: 1180px) {
+/* @media only screen and (max-width: 1180px) {
   figure {
     width: 50%;
     display: inline;
@@ -18,7 +18,7 @@
     width: 100%;
     height: auto;
   }
-}
+} */
 
 /**************************/
 /* PHONE */
@@ -38,9 +38,10 @@
   }
 
   figure {
-    width: 100%;
-    margin-left: 0;
+    width: 50%;
+    margin-left: 2rem;
     display: block;
+    max-width: none;
   }
 
   .featured {
@@ -144,6 +145,7 @@
   .featured-text {
     font-size: 1.8rem;
     line-height: 1.5;
+    margin-bottom: 3rem;
   }
 
   h2 {
@@ -158,6 +160,11 @@
   .portrait {
     width: 100%;
     height: auto;
+  }
+
+  .portrait-box {
+    display: flex;
+    justify-content: center;
   }
 
   /**************************/
