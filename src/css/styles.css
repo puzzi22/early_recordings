@@ -223,7 +223,6 @@ article {
   top: 50%;
   transform: translateY(-50%);
   object-fit: cover;
-  transition: 0.2s;
 }
 
 /* .article-1 h2 {
