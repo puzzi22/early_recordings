@@ -86,7 +86,7 @@ ul {
 
 .logo a:hover {
   background-color: var(--primary-color);
-  transition: background-color 0.5s ease-out;
+  transition: background-color 0.2s ease-in;
   line-height: 0;
 }
 
@@ -186,6 +186,10 @@ blockquote {
   justify-content: space-between;
   align-items: center;
 }
+
+/* .float-nav {
+  float: right;
+} */
 
 .nav-list li {
   display: inline-block;
