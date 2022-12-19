@@ -51,11 +51,12 @@
 @media only screen and (orientation: portrait) and (max-width: 767px) {
   header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1)),
-      image-set(
+      url(../img/conservatoire-portrait.webp?width=767);
+    /* image-set(
         url(../img/conservatoire-portrait.webp?width=320) 1x,
         url(../img/conservatoire-portrait.webp?width=500) 2x,
         url(../img/conservatoire-portrait.webp?width=767) 3x
-      );
+      ); */
   }
 }
 
@@ -88,7 +89,6 @@
 
   figure {
     width: 80%;
-    margin-left: 2rem;
     display: block;
     max-width: none;
   }
@@ -232,6 +232,12 @@
   .secundary-box {
     display: flex;
     justify-content: center;
+  }
+
+  .secundary-box figure,
+  .portrait-box figure {
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .horn-list {
