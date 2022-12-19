@@ -57,6 +57,12 @@
         url(../img/conservatoire-portrait.webp?width=767) 3x
       );
   }
+
+  @supports (-webkit-overflow-scrolling: touch) {
+    body * {
+      background-attachment: scroll;
+    }
+  }
 }
 
 /**************************/
