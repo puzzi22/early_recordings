@@ -231,6 +231,10 @@ ul.nav-list {
   width: 15rem;
 }
 
+.logo-link {
+  line-height: 0;
+}
+
 /**************************/
 /* SVG PLAY ANIMATION */
 /**************************/

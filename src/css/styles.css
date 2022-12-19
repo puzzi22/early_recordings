@@ -10,7 +10,11 @@ header {
       url(../img/conservatoire.webp?width=1800) 3x
     );
   background-size: cover;
-  background-position: top;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+  margin: 0;
+  padding: 0;
   height: 100vh;
   width: auto;
   background-attachment: fixed;
@@ -182,7 +186,7 @@ a .pannel-image:hover {
 
 .bio li {
   list-style: outside;
-  margin-left: 1.5rem;
+  margin-left: 1.2rem;
 }
 
 article {
