@@ -157,6 +157,7 @@ a .pannel-image:hover {
   left: 0;
   transition: opacity 0.5s ease;
   transition-delay: 1ms;
+  -webkit-transition: 500ms opacity ease;
 }
 
 .image-wrapper img {
