@@ -10,7 +10,7 @@ header {
       url(../img/conservatoire.webp?width=1800) 3x
     );
   background-size: cover;
-  background-position: center center;
+  background-position: top;
   height: 100vh;
   width: auto;
   background-attachment: fixed;
