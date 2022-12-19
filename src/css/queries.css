@@ -51,12 +51,11 @@
 @media only screen and (orientation: portrait) and (max-width: 767px) {
   header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1)),
-      url(../img/conservatoire-portrait.webp?width=767);
-    /* image-set(
+      image-set(
         url(../img/conservatoire-portrait.webp?width=320) 1x,
         url(../img/conservatoire-portrait.webp?width=500) 2x,
         url(../img/conservatoire-portrait.webp?width=767) 3x
-      ); */
+      );
   }
 }
 
@@ -184,7 +183,11 @@
   .horn-list li {
     margin-left: 2rem;
     font-size: 1.8rem;
-    line-height: 2;
+    line-height: 1.8;
+  }
+
+  .horn-list {
+    columns: 1;
   }
 
   .dedicatee li {
@@ -238,14 +241,6 @@
   .portrait-box figure {
     margin-left: 0;
     margin-right: 0;
-  }
-
-  .horn-list {
-    columns: 1;
-  }
-
-  .horn-list li {
-    line-height: 1.6;
   }
 
   .article-text h2 {
