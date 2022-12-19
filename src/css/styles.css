@@ -155,7 +155,7 @@ a .pannel-image:hover {
   overflow: hidden;
   top: 0;
   left: 0;
-  transition: 0.5s opacity ease;
+  transition: opacity 0.5s ease;
   transition-delay: 1ms;
 }
 
