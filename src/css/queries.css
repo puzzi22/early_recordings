@@ -59,6 +59,10 @@
   }
 }
 
+/**************************/
+/* FIX FOR SAFARI iOS */
+/**************************/
+
 @supports (-webkit-overflow-scrolling: touch) {
   body * {
     background-attachment: scroll;
@@ -179,7 +183,7 @@
   }
 
   #featured-span {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
   }
 
   .horn-list a {
@@ -218,13 +222,13 @@
 
   .title {
     font-size: 2.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0;
   }
 
   .featured-text {
     font-size: 1.6rem;
     line-height: 1.4;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
   }
 
   .featured h2 {
