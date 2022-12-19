@@ -151,12 +151,12 @@ article:last-child {
 
 a .pannel-image:hover {
   opacity: 0.8;
-  /* transform: scale(1.01); */
+  transform: scale(1.01);
   overflow: hidden;
   top: 0;
   left: 0;
-  transition: opacity 0.5s ease;
-  transition-delay: 1ms;
+  transition: 500ms all ease;
+  transition-delay: 100ms;
   -webkit-transition: 500ms opacity ease;
 }
 
