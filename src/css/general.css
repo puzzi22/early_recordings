@@ -178,13 +178,14 @@ blockquote {
 
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.9);
   overflow: hidden;
   padding: 0 5vw;
   z-index: 10;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 /* .float-nav {
