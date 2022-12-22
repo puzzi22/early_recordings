@@ -14,7 +14,8 @@ header {
   height: 100vh;
   width: auto;
   background-attachment: fixed;
-  clip-path: circle(250vh at 50% -200vh);
+  clip-path: ellipse(100vw 30vh at 50vw 20vh);
+  /* clip-path: circle(250vh at 50% -200vh); */
 }
 
 .parent-header {
@@ -22,7 +23,8 @@ header {
 }
 
 #hero {
-  clip-path: circle(170vh at 50% -80vh);
+  /* clip-path: circle(170vh at 50% -80vh); */
+  clip-path: ellipse(100vw 45vh at 50vw 20vh);
 }
 
 .one-third {
@@ -62,13 +64,13 @@ header {
   margin-top: 3rem;
 }
 
-.listen-icon {
+/* .listen-icon {
   display: inline;
   width: 2rem;
   color: var(--primary-color);
   filter: invert(55%) sepia(98%) saturate(960%) hue-rotate(351deg)
     brightness(95%) contrast(87%);
-}
+} */
 
 /**************************/
 /* HORN PLAYERS */
