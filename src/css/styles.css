@@ -5,9 +5,9 @@
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1)),
     image-set(
-      url(../img/conservatoire.webp?width=800) 1x,
-      url(../img/conservatoire.webp?width=1200) 2x,
-      url(../img/conservatoire.webp?width=1800) 3x
+      url(../img/conservatoire.jpg?width=800&as=webp) 1x,
+      url(../img/conservatoire.jpg?width=1200&as=webp) 2x,
+      url(../img/conservatoire.jpg?width=1800&as=webp) 3x
     );
   background-size: cover;
   background-position: top;
@@ -15,7 +15,6 @@ header {
   width: auto;
   background-attachment: fixed;
   clip-path: ellipse(100vw 30vh at 50vw 20vh);
-  /* clip-path: circle(250vh at 50% -200vh); */
 }
 
 .parent-header {
@@ -23,8 +22,8 @@ header {
 }
 
 #hero {
-  /* clip-path: circle(170vh at 50% -80vh); */
-  clip-path: ellipse(100vw 45vh at 50vw 20vh);
+  clip-path: ellipse(100vw 40vh at 50vw 20vh);
+  mask-image: linear-gradient(to top, transparent 25%, black 75%);
 }
 
 .one-third {

@@ -52,9 +52,9 @@
   header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1)),
       image-set(
-        url(../img/conservatoire-portrait.webp?width=320) 1x,
-        url(../img/conservatoire-portrait.webp?width=500) 2x,
-        url(../img/conservatoire-portrait.webp?width=767) 3x
+        url(../img/conservatoire-portrait.jpg?width=320&as=webp) 1x,
+        url(../img/conservatoire-portrait.jpg?width=500&as=webp) 2x,
+        url(../img/conservatoire-portrait.jpg?width=767?&s=webp) 3x
       );
   }
 }
