@@ -132,6 +132,12 @@
                 <img
                   class="portrait"
                   src="../img/societe.png?as=webp"
+                  srcset="
+                    ../img/societe.png?as=webp&width=600 600w,
+                    ../img/societe.png?as=webp&width=390 390w,
+                    ../img/societe.png?as=webp&width=220 220w
+                  "
+                  sizes="(max-width: 767px) 80vw, (max-width: 1180px) 30vw, 400px"
                   alt="Horn Players Jean Penable and Édouard Vuillermoz in rehearsal"
                 />
                 <figcaption>
@@ -351,7 +357,7 @@
           <p>&#169; Pierre-Antoine Tremblay. 2022</p>
         </div>
         <div>
-          <nav class="footer-links">
+          <ul class="footer-links">
             <li>
               <a href="../description.html">Presentation</a>
             </li>
@@ -364,7 +370,7 @@
             <li>
               <a href="../copyrights.html">Copyrights</a>
             </li>
-          </nav>
+          </ul>
         </div>
       </div>
     </footer>
