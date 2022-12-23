@@ -23,7 +23,7 @@ header {
 
 #hero {
   clip-path: ellipse(100vw 40vh at 50vw 20vh);
-  mask-image: linear-gradient(to top, transparent 25%, black 75%);
+  mask-image: linear-gradient(to top, transparent 25%, black 60%);
 }
 
 .one-third {
