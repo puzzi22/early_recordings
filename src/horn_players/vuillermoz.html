@@ -33,20 +33,15 @@
   <body class="page-home">
     <nav class="topnav" id="myTopnav">
       <div>
-        <button
-          class="icon"
-          onclick="toggleMobileNav()"
-          type="button"
-          aria-label="toggle mobile nav"
-        >
-          <!-- <span class="fa fa-bars"></span> -->
-
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-            <path
-              d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
-            />
-          </svg>
-        </button>
+        <a class="logo-link" href="../index.html">
+          <img
+            class="logo-nav active"
+            src="../img/logo-svg-transparent-early-horn-recordings.svg"
+            alt="Early Horn Recordings Logo"
+            width="608"
+            height="197"
+          />
+        </a>
       </div>
       <ul class="nav-list">
         <li><a href="../description.html">Presentation</a></li>
@@ -54,14 +49,20 @@
         <li><a href="../countries.html">Countries</a></li>
         <li><a href="../copyrights.html">Copyrights</a></li>
         <li>
-          <a
-            aria-label="navigation menu link"
-            href="javascript:void(0);"
+          <button
             class="icon"
             onclick="toggleMobileNav()"
+            type="button"
+            aria-label="toggle mobile nav"
           >
-            <span class="fa fa-bars"></span>
-          </a>
+            <!-- <span class="fa fa-bars"></span> -->
+
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <path
+                d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+              />
+            </svg>
+          </button>
         </li>
       </ul>
     </nav>
