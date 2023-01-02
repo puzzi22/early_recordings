@@ -166,7 +166,7 @@ blockquote {
 
 button {
   border: 0;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: inherit;
 }
 
 .author {
@@ -175,6 +175,13 @@ button {
   margin-bottom: 1em;
   margin-left: 40px;
   margin-right: 40px;
+}
+
+.icon svg {
+  width: 2rem;
+  height: 2rem;
+  fill: #f2f2f2;
+  /* vertical-align: -0.125em; */
 }
 
 /**************************/
