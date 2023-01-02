@@ -164,6 +164,11 @@ blockquote {
   margin-right: 40px;
 }
 
+button {
+  border: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
 .author {
   display: block;
   margin-top: 1em;
@@ -197,7 +202,8 @@ ul.nav-list {
 }
 
 /* Style the links inside the navigation bar */
-.topnav a {
+.topnav a,
+.topnav button {
   float: left;
   display: block;
   color: #f2f2f2;
@@ -208,9 +214,10 @@ ul.nav-list {
 }
 
 /* Change the color of links on hover */
-.topnav a:hover {
+.topnav a:hover,
+.topnav button:hover {
   background-color: rgb(221, 221, 221, 0.8);
-  color: black;
+  color: rgba(0, 0, 0, 0.9);
 }
 
 /* Add an active class to highlight the current page */

@@ -111,7 +111,7 @@
     display: none;
   }
 
-  .topnav a.icon {
+  .topnav button.icon {
     float: right;
     display: block;
   }
@@ -127,7 +127,7 @@
     padding-bottom: 1rem;
   }
 
-  .topnav.responsive a.icon {
+  .topnav.responsive button.icon {
     position: absolute;
     right: 5vw;
     top: 1.4rem;
