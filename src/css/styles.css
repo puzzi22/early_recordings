@@ -63,14 +63,6 @@ header {
   margin-top: 3rem;
 }
 
-/* .listen-icon {
-  display: inline;
-  width: 2rem;
-  color: var(--primary-color);
-  filter: invert(55%) sepia(98%) saturate(960%) hue-rotate(351deg)
-    brightness(95%) contrast(87%);
-} */
-
 /**************************/
 /* HORN PLAYERS */
 /**************************/
@@ -125,6 +117,7 @@ article {
   padding: 0rem 0rem 1rem 0rem;
   display: flex;
   flex-direction: column;
+  grid-column: 1 / 4;
 }
 
 article:last-child {
@@ -186,10 +179,6 @@ a .pannel-image:hover {
 .bio li {
   list-style: outside;
   margin-left: 1.6rem;
-}
-
-article {
-  grid-column: 1 / 4;
 }
 
 .hornists-grid article {
@@ -305,15 +294,6 @@ article {
   overflow: hidden;
 }
 
-.item-image img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: auto;
-  line-height: 0;
-}
-
 .item-text {
   position: absolute;
   top: 0;
@@ -335,12 +315,6 @@ article {
   width: 100%;
   top: 50%;
   transform: translateY(-50%);
-}
-
-.item-text-title {
-  font-size: 2rem;
-  padding: 0 1rem;
-  margin: 0.5rem 0 0 0;
 }
 
 .item-text-category {
