@@ -7,7 +7,7 @@
 :root {
   --text-color: rgb(23, 23, 23);
   --primary-color: rgb(229, 136, 29);
-  --primary-color2: rgb(182, 97, 0);
+  --primary-color2: #af5e02;
   --secondary-color: rgb(62, 62, 62);
   --secondary-light-color: rgb(224, 224, 224);
 }
@@ -49,7 +49,7 @@ body {
 /**************************/
 
 a {
-  color: var(--primary-color);
+  color: var(--primary-color2);
   text-decoration: none;
   background-color: transparent;
   font-size: 2rem;
@@ -85,7 +85,7 @@ ul {
 }
 
 .logo a:hover {
-  background-color: var(--primary-color);
+  background-color: var(--primary-color2);
   transition: background-color 0.2s ease-in;
   line-height: 0;
 }
@@ -93,7 +93,7 @@ ul {
 h1 {
   font-size: 5rem;
   text-transform: uppercase;
-  color: var(--primary-color);
+  color: var(--primary-color2);
 }
 
 .section-title {
@@ -262,7 +262,7 @@ svg {
 }
 
 #darkGroup {
-  fill: var(--primary-color);
+  fill: var(--primary-color2);
 }
 
 #lightGroup {
