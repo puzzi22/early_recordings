@@ -45,6 +45,16 @@ body {
 }
 
 /**************************/
+/* FIX FOR SAFARI iOS */
+/**************************/
+
+@supports (-webkit-overflow-scrolling: touch) {
+  body * {
+    background-attachment: scroll;
+  }
+}
+
+/**************************/
 /* GENERAL ELEMENTS */
 /**************************/
 
